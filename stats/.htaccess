@@ -1,0 +1,30 @@
+#	Mod_security can interfere with uploading of content such as attachments. If you
+#	cannot attach files, remove the "#" from the lines below.
+#<IfModule mod_security.c>
+#	SecFilterEngine Off
+#	SecFilterScanPOST Off
+#</IfModule>
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	#	If you are having problems with the rewrite rules, remove the "#" from the
+	#	line that begins "RewriteBase" below. You will also have to change the path
+	#	of the rewrite to reflect the path to your XenForo installation.
+	#RewriteBase /xenforo
+
+	#	This line may be needed to enable WebDAV editing with PHP as a CGI.
+	#RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+
+    #RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+    # Rewrite for player.php?name=censink&page=1
+    #RewriteRule ^player/([0-9a-zA-z_-]+)/([0-9]+)$ player.php?name=$1&page=$2 [NC,L]
+    RewriteRule ^top$ top.php [NC,L]
+    RewriteRule ^kills$ kills.php [NC,L]
+    RewriteRule ^player/([0-9a-zA-z_-]+)$ player.php?name=$1 [NC,L]
+    RewriteRule ^player$ player.php [NC,L]
+
+</IfModule>

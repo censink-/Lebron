@@ -1,0 +1,176 @@
+body {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    margin-bottom:35px;
+}
+.special {
+    background-color: #333333;
+}
+.special > div > h1,
+.special h4,
+.special label {
+    color: #DDDDDD;
+}
+.special form > input,
+.special .list-group-item,
+.special .panel-heading {
+    background-color: #666666;
+    border: 1px solid #999999;
+    color: #DDDDDD;
+}
+.special form > input:focus {
+    background-color: #999999;
+}
+.special .well,
+.special .thumbnail,
+.special .table-striped tr:nth-child(odd)>td,
+.special table,
+.special .panel-body {
+    background-color: #999999;
+}
+.special .tablehead {
+    background-color: #666666;
+}
+.special .table>tbody>tr.warning>td {
+    background-color: #B0B284;
+}
+.special .table>tbody>tr.active>td {
+    background-color: #BBBBBB;
+}
+.special .table>tbody>tr.bronze>td {
+    background-color: #AD9F92;
+}
+.special .table>tbody>tr.success>td {
+    background-color: #A7BEA7;
+}
+.special .table>tbody>tr.danger>td {
+    background-color: #BEA7A7;
+}
+.special .well>h1>small {
+    color: #666666;
+}
+.special a,
+.special a:hover {
+    color: #3853B4;
+}
+.special .btn,
+.special .btn:hover,
+.special th {
+    color: white;
+}
+.special .btn.btn-default {
+    color: black;
+}
+.special .list-group-item>.text-success {
+    color: #5CB85C;
+}
+.special .list-group-item>.text-danger {
+    color: #D9534F;
+}
+
+.navbar.navbar-default {
+    background-color: #F3F3F3;
+    box-shadow: 0 0 5px 0px gray;
+}
+.hearts {
+    background: url(../img/hearts.png) no-repeat  top;
+    height: 15px;
+    width: 150px;
+    background-size: 150px 315px;
+    display: inline-block;
+    margin-top: 4px;
+}
+.h-0 {
+    background-position: 0px 0px;
+}
+.h-5 {
+    background-position: 0px -15px;
+}
+.h-10 {
+    background-position: 0px -30px;
+}
+.h-15 {
+    background-position: 0px -45px;
+}
+.h-20 {
+    background-position: 0px -60px;
+}
+.h-25 {
+    background-position: 0px -75px;
+}
+.h-30 {
+    background-position: 0px -90px;
+}
+.h-35 {
+    background-position: 0px -105px;
+}
+.h-40 {
+    background-position: 0px -120px;
+}
+.h-45 {
+    background-position: 0px -135px;
+}
+.h-50 {
+    background-position: 0px -150px;
+}
+.h-55 {
+    background-position: 0px -165px;
+}
+.h-60 {
+    background-position: 0px -180px;
+}
+.h-65 {
+    background-position: 0px -195px;
+}
+.h-70 {
+    background-position: 0px -210px;
+}
+.h-75 {
+    background-position: 0px -225px;
+}
+.h-80 {
+    background-position: 0px -240px;
+}
+.h-85 {
+    background-position: 0px -255px;
+}
+.h-90 {
+    background-position: 0px -270px;
+}
+.h-95 {
+    background-position: 0px -285px;
+}
+.h-100 {
+    background-position: 0px -300px;
+}
+.avatar {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+}
+tr.sortable > th > a.btn-sm {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.bronze {
+    background-color: #F9EFE6;
+}
+.tablehead {
+    background-color: #F5F5F5;
+}
+.huge {
+    font-size: 75px;
+    margin: 30px 0 30px 0;
+}
+.lastkill {
+    width:100%;
+    height:40px;
+    background-color:rgba(255,255,255,0.5);
+    bottom:0px;
+    left:0px;
+    position:fixed;
+    border-top:3px solid rgba(255,255,255,0.5);
+    text-align:center;
+    vertical-align:middle;
+    box-shadow:0 0 5px 0px gray;
+}
